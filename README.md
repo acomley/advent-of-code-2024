@@ -10,6 +10,11 @@ I have not used Haskell since writing a sudoku solver for a college project circ
 
 ### Day 1: Historian Hysteria
 
+```bash
+stack build
+cat data/01/input | stack exec day01
+```
+
 The first part of the challenge is two parse the inputs. We are given two lists, but in columnar format. `transpose` handles the transforming of the line inputs into the proper lists. After this it is easy to chain the various functions to get the sum of the distances. For similarity score, I use `foldl` with a Map as the accumulator to determine the frequency counts, then just sum the mapping of list1 multiplied with the frequency.
 
 **Haskel Learnings**
