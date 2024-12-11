@@ -25,6 +25,22 @@ executable day01
                        -Wpartial-fields
                        -Wredundant-constraints
 
+executable day02
+  hs-source-dirs:      src
+  main-is:             Day02.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       text
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
+
 executable dayxx
   hs-source-dirs:      src
   main-is:             DayXX.hs
