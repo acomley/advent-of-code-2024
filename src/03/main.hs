@@ -33,11 +33,11 @@ main = do
           foldl
             ( \(sumAcc, isActive) (instr, x1, x2) ->
                 case T.unpack instr of
-                  "don't" -> (sumAcc, False) -- Deactivate
-                  "do" -> (sumAcc, True) -- Reactivate
+                  "don't" -> (sumAcc, False)
+                  "do" -> (sumAcc, True)
                   "mul"
                     | isActive && isJust x1 && isJust x2 -> (sumAcc + fromJust x1 * fromJust x2, isActive)
-                  _ -> (sumAcc, isActive) -- No change
+                  _ -> (sumAcc, isActive)
             )
             (0, True)
             instructions
