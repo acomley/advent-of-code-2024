@@ -1,4 +1,4 @@
--- Day 1: Historian Hysteria
+-- Day 01: Historian Hysteria
 
 module Main (main) where
 
