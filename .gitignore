@@ -22,5 +22,5 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 
-data/*
-!data/.keep
+src/*/input*
+src/*/sample*

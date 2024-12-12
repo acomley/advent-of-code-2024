@@ -1,4 +1,4 @@
--- Day 2: Red-Nosed Reports
+-- Day 02: Red-Nosed Reports
 
 module Main (main) where
 
